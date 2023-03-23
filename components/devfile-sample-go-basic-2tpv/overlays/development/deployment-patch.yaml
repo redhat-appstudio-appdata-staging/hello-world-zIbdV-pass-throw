@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-go-basic-2tpv
+  namespace: rh-ee-mmhedhbi-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:faa6dd95394805ee9f761b2c28103e96948c72459b5639da9a351e124acce68b
+        name: my-go
+        resources: {}
+status: {}
