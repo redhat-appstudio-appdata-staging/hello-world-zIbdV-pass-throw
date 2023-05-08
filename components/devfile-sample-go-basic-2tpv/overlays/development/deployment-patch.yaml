@@ -3,7 +3,6 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   name: devfile-sample-go-basic-2tpv
-  namespace: rh-ee-mmhedhbi-tenant
 spec:
   replicas: 1
   selector: {}
